@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width:75%;
+    max-width: 1052px;
+    margin:2em auto;
+    display: flex;
+    flex-direction: column;
+    border:.1em solid #000;
+}
+
+.header{
+    padding:2.5em 0;
+    text-align:center;
+}
+
+#title{
+    font-size:2.5rem;
+    color:blue;
+}
+#title:hover{
+    color:blueviolet;
+}
+
+#description{
+    font-size:1.2rem;
+    margin-top:1em
+}
+
+hr{
+    color:blue;
+}
+
+.form-container{
+    width:80%;
+    margin:2em auto;
+}
+
+.form-group{
+    margin:1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-label,.radio-label{
+    padding:.5em;
+}
+.input-group{
+    width:100%;
+    font-size: 1rem;
+    padding:1em;
+    margin:1em 0;
+}
+
+.label-group{
+    font-size:1rem;
+}
+#comments-section{
+    padding:1em;
+    font-size: 1rem;
+    min-width:100%;
+    height:auto;
+    margin:1em 0;
+    resize: vertical;
+    overflow: scroll;
+}
+#submit,#reset{
+    background-color:blue;
+    color:#fff;
+    cursor: pointer;
+}
+
+#submit:hover,#reset:hover{
+    background-color: blueviolet;
+}
+
+.submit-reset{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+}
+
+.submit-btn,.reset-btn{
+    flex-basis:50%;
+}
+
+@media screen and (max-width:800px){
+    .container{
+        width:80%;
+        margin:1.5em auto;
+        border:0;
+    }
+    .form-container{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width:95%;
+        margin:1em auto;
+    }
+
+    .submit-reset{
+        flex-direction: column;
+    }
+
+    .submit-btn,.reset-btn{
+        flex-basis:100%;
+    }
+    
+}

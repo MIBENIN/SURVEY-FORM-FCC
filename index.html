@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form | FCC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please complete the form below</p>
+        </div>
+        <hr>
+        <div class="form-container">
+            <form id="survey-form" action="#" method="GET">
+                <div class="form-group">
+                    <label for="name" class="label-group" id="name-label">Name:</label>
+                    <input type="name" id="name" name="Name" placeholder="Enter Your Name" class="input-group" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="label-group" id="email-label">Email:</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter Your Email"  class="input-group" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="number" class="label-group" id="number-label">Age:</label>
+                    <input type="number" id="number" name="Age" placeholder="Enter Your Age" class="input-group" min="10" max="50" required>
+                </div>
+
+               <div class="form-group">
+                   <label for="dropdown" class="label-group">
+                        What is your gender?
+                   </label>
+                   <select id="dropdown" class="input-group" required>
+                       <option value="Male">Male</option>
+                       <option  value="Female">Female</option>
+                       <option  value="Transgender">Transgender</option>
+                       <option value="Prefer not to say" >Prefer not to say</option>
+                   </select>
+               </div>
+
+               <div class="form-group">
+                  <p> Are you a?</p>
+                  <label for="student" class="label group radio-label"> <input type="radio" name="profession" id="student" value="Student">Student</label>
+                  <label for="profesional" class="label group radio-label"> <input type="radio" name="profession" id="professional" value="Professional">Professional</label>
+                  <label for="intern" class="label group radio-label"> <input type="radio" name="profession" id="intern" value="Intern">Intern</label>
+               </div>
+
+               <div class="form-group">
+                <p> Which Essential Courses do you like to take next?</p>
+                <label for="course1" class="label-group checkbox-label"><input type="checkbox" name="AL & ML" value="AL & ML" id="course1" >AL & ML</label>
+                <label for="course2" class="label-group checkbox-label"><input type="checkbox" name="Python" value="Python" id="course2" >Python</label>
+                <label for="course3" class="label-group checkbox-label"><input type="checkbox" name="Java" value="Java" id="course3" >Java</label>
+                <label for="course4" class="label-group checkbox-label"><input type="checkbox" name="HTML and CSS" value="HTML and CSS" id="course4" >HTML and CSS</label>
+                <label for="course5" class="label-group checkbox-label"><input type="checkbox" name="Data Science" value="Data Science" id="course5" >Data Science</label>
+               </div> 
+               
+               <div class="form-group">
+               <label for="comments-section" class="label-group">Comments:
+               <textarea id="comments-section" name="Comments" placeholder="Add your Comments here" >
+               </textarea>
+               </label>
+               </div>
+               <div class="form-group submit-reset">
+                   <input type="submit" id="submit" value="Submit" class="input-group submit-btn">
+                   <input type="reset"  id="reset"  value="Reset" class="input-group reset-btn">
+               </div> 
+             </form>
+        </div>
+     </div>-- 
+
+
+</body>
+</html>
